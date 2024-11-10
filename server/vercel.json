@@ -5,8 +5,7 @@
     ],
     "routes": [
       { "src": "/submit-incident", "dest": "server.js" },
-      { "src": "/incidents", "dest": "server.js" },
-      { "src": "/(.*)", "dest": "server.js" }
+      { "src": "/incidents", "dest": "server.js" }
     ]
   }
   
