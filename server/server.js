@@ -6,7 +6,7 @@ const path = require('path');
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: '*' })); 
+app.use(cors({ origin: 'https://alert-hazel.vercel.app/' })); 
 app.use(express.json()); // For parsing JSON data
 
 // Serve the incidents.json file
