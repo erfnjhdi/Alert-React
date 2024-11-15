@@ -1,11 +1,15 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "server.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-      { "src": "/submit-incident", "dest": "server.js" },
-      { "src": "/incidents", "dest": "server.js" }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "server/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server/server.js"
+    }
+  ]
+}
