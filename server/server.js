@@ -14,7 +14,7 @@ db.once('open', () => {
 
 const app = express();
 app.use(cors({ origin: 'https://alert-hazel.vercel.app' })); 
-app.use(express.json()); // For parsing JSON data
+app.use(express.json()); 
 
 //incident schema
 const incidentSchema = new mongoose.Schema({

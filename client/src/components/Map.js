@@ -37,7 +37,7 @@ const MapComponent = () => {
   };
 
   const fetchIncidents = () => {
-    fetch('https://alert-react-server.vercel.app/incidents')
+    fetch('https://alert-server-ex3h.onrender.com/incidents')
       .then((res) => res.json())
       .then((data) => {
         console.log('Fetched incidents:', data);
@@ -75,7 +75,7 @@ const MapComponent = () => {
         longitude: lng,
       };
   
-      fetch('https://alert-react-server.vercel.app/submit-incident', {
+      fetch('https://alert-server-ex3h.onrender.com/submit-incident', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
